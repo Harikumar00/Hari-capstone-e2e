@@ -8,9 +8,9 @@ pipeline {
             }
         }
 
-        stage('Check Docker') {
+        stage('Shell Test') {
             steps {
-                sh 'docker --version'
+                sh 'echo Hello from Jenkins'
             }
         }
     }
