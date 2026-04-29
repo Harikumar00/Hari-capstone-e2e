@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Test Stage') {
+        stage('Test') {
             steps {
-                echo 'Pipeline is working'
+                echo 'Working now'
             }
         }
 
-        stage('Shell Test') {
+        stage('Shell') {
             steps {
-                sh 'echo Hello from Jenkins'
+                sh 'echo Hello from EC2'
             }
         }
     }
