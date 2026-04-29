@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Check Docker') {
+        stage('Test Stage') {
             steps {
-                sh 'docker --version'
+                echo 'Pipeline is working'
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Check Docker') {
             steps {
-                sh 'docker build -t my-app .'
+                sh 'docker --version'
             }
         }
     }
